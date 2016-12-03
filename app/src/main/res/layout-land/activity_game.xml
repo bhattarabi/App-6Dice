@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.mnstate.vh8237yk.project2.GameActivity">
+
+    <fragment
+        android:id="@+id/fragGame"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        class="edu.mnstate.vh8237yk.project2.GameFragment"
+        tools:layout="@layout/game_fragment" />
+    <fragment
+        android:id="@+id/fragRolls"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        class="edu.mnstate.vh8237yk.project2.RollsFragment"
+        tools:layout="@layout/rolls_fragment" />
+</LinearLayout>

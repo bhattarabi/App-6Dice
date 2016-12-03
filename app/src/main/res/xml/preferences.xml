@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="pref_skip_turn"
+        android:title="@string/allow_skip_turn"
+        android:summary="@string/skip_turn_summary"
+        android:defaultValue="true" />
+    <CheckBoxPreference
+        android:key="pref_display_rolls"
+        android:title="@string/display_rolls"
+        android:summary="@string/display_rolls_summary"
+        android:defaultValue="true" />
+    <CheckBoxPreference
+        android:key="pref_display_dbtoolbar"
+        android:title="@string/display_dbtoolbar"
+        android:summary="@string/display_toolbar_summary"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.mnstate.vh8237yk.project2.MainActivity">
+
+    <TextView
+        style="@style/TitleTextView"
+        android:id="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/gameTitle" />
+
+    <TextView
+        style="@style/CoverPageStyle"
+        android:id="@+id/lblSelect"
+        android:layout_below="@+id/lblTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="@string/pleaseSelect" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblSelect"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/CoverPageStyle"
+                android:text="@string/numPlayers" />
+
+            <TextView
+                style="@style/CoverPageStyle"
+                android:layout_marginTop="10dp"
+                android:text="@string/numDice" />
+
+            <TextView
+                style="@style/CoverPageStyle"
+                android:layout_marginTop="10dp"
+                android:text="@string/numFaces" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spnNumPlayers"
+                style="@style/CoverPageStyle"></Spinner>
+
+            <Spinner
+                android:layout_marginTop="15dp"
+                android:id="@+id/spnNumDice"
+                style="@style/CoverPageStyle"></Spinner>
+
+            <Spinner
+                android:layout_marginTop="15dp"
+                android:id="@+id/spnNumFaces"
+                style="@style/CoverPageStyle"></Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/CoverPageStyle"
+        android:text="@string/start"
+        android:layout_marginTop="38dp"
+        android:id="@+id/btnStart"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignLeft="@+id/lblTitle"
+        android:layout_alignStart="@+id/lblTitle"
+        android:onClick="startGame"/>
+
+</RelativeLayout>
